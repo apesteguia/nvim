@@ -17,7 +17,7 @@ You can rename the folder by typing `$ mv /home/user/.config/nvim /home/user/.co
 * The main keymap change in this config is the mode change, now you can pass from insert mode to normal mode by typing `jk` or `kj`.
 * There are also some customization features such us `airline`, `onedark theme`, `colorizer` and `rainbow-parentheses` installed.
 * There is also a `fzf` finder installed.
-* If you press space, a option menu will apear, in which native explorer and some other userful apps will appaer in choice.
+* If you press `space`, a option menu will apear, in which native explorer and some other userful apps will appaer in choice.
 
 ### COC configuration
 * With this plugin you can install support for some languages and other useful apps. These are the ones that work with my config. `:CocInstall coc-explorer coc-python coc-json coc-lua coc-vim`.
