@@ -14,6 +14,9 @@ You can rename the folder by typing `$ mv /home/user/.config/nvim /home/user/.co
 ## Features and configuration
 
 * The main keymap change in this config is the mode change, now you can pass from insert mode to normal mode by typing `jk` or `kj`.
+* There are also some customization features such us `airline`, `onedark theme`, `colorizer` and `rainbow-parentheses` installed.
+
+
 
 
 
