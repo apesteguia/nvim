@@ -8,8 +8,7 @@ This is my neovim config, it's very easy to configure and it has some cool featu
 
 * If you have already a nvim config file and you want to replace it, remove the folder by typing `$ rm -r nvim` and clone the repository afterwards.
 
-* If you want to keep your config, but use this one, you can change the name of your own nvim folder to another one and then clone this repository. 
-You can rename the folder by typing `$ mv /home/user/.config/nvim /home/user/.config/nivm1`.
+* If you want to keep your config, but use this one, you can change the name of your own nvim folder to another one and then clone this repository.  `$ mv /home/user/.config/nvim /home/user/.config/nivm1`.
 
 ## Features and COC configuration
 
