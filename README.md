@@ -1,5 +1,7 @@
 # MY NEOVIM CONFIG
 
+This is my neovim config, it's very easy to configure and it has some cool features and custom keyblinds
+
 ## Installation
   
 * If you haven´t already a nvim config folder in your .config, clone this repository in your .config. After that, open neovim and type `:PlugInstall`.
@@ -8,6 +10,8 @@
 
 * If you want to keep your config, but use this one, you can change the name of your own nvim folder to another one and then clone this repository. 
 You can rename the folder by typing `$ mv /home/user/.config/nvim /home/user/.config/nivm1`.
+
+## Features and configuration
 
 
 
