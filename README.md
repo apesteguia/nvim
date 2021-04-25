@@ -11,12 +11,16 @@ This is my neovim config, it's very easy to configure and it has some cool featu
 * If you want to keep your config, but use this one, you can change the name of your own nvim folder to another one and then clone this repository. 
 You can rename the folder by typing `$ mv /home/user/.config/nvim /home/user/.config/nivm1`.
 
-## Features and configuration
+## Features and COC configuration
 
+### Features
 * The main keymap change in this config is the mode change, now you can pass from insert mode to normal mode by typing `jk` or `kj`.
 * There are also some customization features such us `airline`, `onedark theme`, `colorizer` and `rainbow-parentheses` installed.
 * There is also a `fzf` finder installed.
 
+### COC configuration
+* With this plugin you can install support for some languages and other useful apps. These are the ones that work with my config. `:CocInstall coc-explorer coc-python coc-json coc-lua coc-vim`.
+ But you can install much more as it has support for many other programming languages.
 
 
 
