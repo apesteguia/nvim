@@ -1,6 +1,6 @@
 # MY NEOVIM CONFIG
 
-This is my neovim config, it's very easy to configure and it has some cool features and custom keyblinds
+This is my neovim config, it's very easy to configure and it has some cool features and custom keymapping.
 
 ## Installation
   
