@@ -2,7 +2,7 @@
 
 ## Installation
   
-* If you haven´t already a nvim config folder in your .config, clone this repository in your .config. After that, open neovim and type `:PlugInstall.`
+* If you haven´t already a nvim config folder in your .config, clone this repository in your .config. After that, open neovim and type `:PlugInstall`.
 
 * If you have already a nvim config file and you want to replace it, remove the folder by typing `& rm -r nvim` and clone the repository afterwards.
 
