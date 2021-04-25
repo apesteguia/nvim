@@ -21,7 +21,7 @@ You can rename the folder by typing `$ mv /home/user/.config/nvim /home/user/.co
 
 ### COC configuration
 * With this plugin you can install support for some languages and other useful apps. These are the ones that work with my config. `:CocInstall coc-explorer coc-python coc-json coc-lua`.
-But you can install much more as it has support for many other programming languages. Get more information at (https://github.com/neoclide/coc.nvim)
+But you can install much more as it has support for many other programming languages. Get more information at https://github.com/neoclide/coc.nvim
 
 
 
