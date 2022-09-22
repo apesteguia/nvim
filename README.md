@@ -6,8 +6,9 @@ This is my neovim config, it's very easy to configure and it has some cool featu
 
 * To install you must have installed some dependencies, such us `nodejs` `npm` `yarn` `fzf` `lua` `curl` 
 
-* Also you will need to install VimPlug `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
+* Also you will need to install VimPlug 
+``sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'``
 
 * If you haven´t already a nvim config folder in your .config, clone this repository in your .config. After that, open neovim and type `:PlugInstall`.
 
