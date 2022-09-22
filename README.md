@@ -13,7 +13,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
  ```
 * Clone the repository into your `.config` folder
 ```
-$ git clone https://github.com/apesteguia/nvim.git
+ git clone https://github.com/apesteguia/nvim.git
 ```
 
 * If you haven´t already a nvim config folder in your .config, clone this repository in your .config. After that, open neovim and type `:PlugInstall`.
