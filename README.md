@@ -11,6 +11,10 @@ This is my neovim config, it's very easy to configure and it has some cool featu
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
  ```
+* Clone the repository into your `.config` folder
+```
+$ git clone https://github.com/apesteguia/nvim.git
+```
 
 * If you haven´t already a nvim config folder in your .config, clone this repository in your .config. After that, open neovim and type `:PlugInstall`.
 
