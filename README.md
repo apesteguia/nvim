@@ -35,7 +35,7 @@ git clone https://github.com/apesteguia/nvim.git
 
 ### COC configuration
 * With this plugin you can install support for some languages and other useful apps. These are the ones that work with my config. 
-`:CocInstall coc-explorer coc-python coc-json coc-lua`.
+`:CocInstall coc-explorer coc-clangd coc-java coc-rust-analyzer`.
 But you can install much more as it has support for many other programming languages. Get more information at https://github.com/neoclide/coc.nvim
 
 
