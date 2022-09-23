@@ -2,6 +2,8 @@
 
 This is my neovim config, it's very easy to configure and it has some cool features and custom keymapping.
 
+![My image](nvim.png)
+
 ## Installation
 
 * To install you must have installed some dependencies, such us `nodejs` `npm` `yarn` `fzf` `lua` `curl` 
