@@ -7,7 +7,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 " Switch to your current theme
-let g:airline_theme = 'minimalist'
+let g:airline_theme = 'github_dark_high_contrast'
 
 " Always show tabs
 set showtabline=2

@@ -8,7 +8,13 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'Olical/conjure'
+    Plug 'zchee/deoplete-jedi'
+    Plug 'davidhalter/jedi-vim'
     Plug 'sheerun/vim-polyglot'
+    Plug 'sbdchd/neoformat'
+    Plug 'projekt0n/github-nvim-theme'
     Plug 'jiangmiao/auto-pairs'
     Plug 'joshdick/onedark.vim'
     Plug 'vim-airline/vim-airline'

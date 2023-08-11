@@ -1,37 +1,51 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "typescript",
-    "ruby",
-    "markdown",
-    "javascript",
-    "graphql",
-    "html",
-    "yaml",
-    "json",
-    "python",
-    "haskell",
-    "c",
-    "rust"
-  ],
-  "prettier.tabWidth": 4,
-  // python config
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "snippets.ultisnips.directories": [
-    "UltiSnips",
-    "~/.config/nvim/utils/snips"
-  ],
-  // explorer
-  "explorer.width": 30,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.keyMappings.global": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
+    "coc.preferences.formatOnSave": [
+        "css",
+        "go",
+        "typescript",
+        "ruby",
+        "markdown",
+        "javascript",
+        "graphql",
+        "html",
+        "yaml",
+        "json",
+        "python",
+        "haskell",
+        "c",
+        "rust"
     ],
-    "v": "open:vsplit"
-  }
+    "coc.preferences.formatOptions": {
+        "c": {
+            "command": "clang-format",
+            "args": [
+                "-style=gnu"
+            ],
+            "rootPatterns": [
+                ".clang-format",
+            ]
+        },
+        "cpp": {
+            "command": "clang-format",
+            "args": [
+                "-style=gnu"
+            ],
+            "rootPatterns": [
+                ".clang-format",
+            ]
+        }
+    },
+    // python config
+    // explorer
+    "explorer.width": 30,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.previewAction.onHover": false,
+    "explorer.keyMappings.global": {
+        "<cr>": [
+            "expandable?",
+            "expand",
+            "open"
+        ],
+        "v": "open:vsplit"
+    }
 }

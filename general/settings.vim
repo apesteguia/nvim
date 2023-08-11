@@ -5,6 +5,18 @@ nnoremap rr viw
 nnoremap <S-b> 0
 
 
+let g:deoplete#enable = 1
+
+
+" custom setting for clangformat
+let g:neoformat_cpp_clangformat = {
+    \ 'exe': 'clang-format15',
+    \ 'args': ['--style="{IndentWidth: 4}"']
+\}
+let g:neoformat_enabled_cpp = ['clangformat']
+let g:neoformat_enabled_c = ['clangformat']
+
+
 syntax enable                           " Enables syntax highlighing
 set autochdir
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -20,7 +32,7 @@ set splitright                          " Vertical splits will automatically be 
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=2                           " Insert 2 spaces for a ta
-set shiftwidth=2                     " Change the number of space characters inserted for indentation
+set shiftwidth=4                    
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
@@ -43,4 +55,4 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
-colo gruber
+colo github_dark_high_contrast
