@@ -10,11 +10,30 @@
         "html",
         "yaml",
         "json",
-        "python",
         "haskell",
         "c",
-        "rust"
+        "rust",
+        "go"
     ],
+    "python.linting.flake8Enabled": true,
+    "languageserver": {
+        "go": {
+            "command": "gopls",
+            "rootPatterns": [
+                "go.work",
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "filetypes": [
+                "go"
+            ],
+            "initializationOptions": {
+                "usePlaceholders": true
+            }
+        }
+    },
     "coc.preferences.formatOptions": {
         "c": {
             "command": "clang-format",
@@ -47,5 +66,6 @@
             "open"
         ],
         "v": "open:vsplit"
-    }
+    },
+    "svelte.enable-ts-plugin": true
 }
