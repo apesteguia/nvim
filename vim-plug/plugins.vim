@@ -8,7 +8,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'Olical/conjure'
     Plug 'zchee/deoplete-jedi'
     Plug 'davidhalter/jedi-vim'
@@ -34,3 +33,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1

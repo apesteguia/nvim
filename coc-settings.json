@@ -32,6 +32,25 @@
             "initializationOptions": {
                 "usePlaceholders": true
             }
+        },
+        "solargraph": {
+            "command": "bundle",
+            "args": [
+                "exec",
+                "solargraph",
+                "stdio"
+            ],
+            "filetypes": [
+                "ruby"
+            ],
+            "initializationOptions": {},
+            "settings": {},
+            "rootPatterns": [
+                "Gemfile",
+                ".git"
+            ],
+            "trace.server": "verbose",
+            "workspaceFolder": null
         }
     },
     "coc.preferences.formatOptions": {
