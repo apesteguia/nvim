@@ -1,6 +1,4 @@
-# My neovim config
-
-This is my neovim config, it's very easy to configure and it has some cool features and custom keymapping.
+# Neovim config
 
 ![My image](nvim.png)
 
