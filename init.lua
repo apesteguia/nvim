@@ -7,6 +7,7 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.opt.guicursor = ''
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
@@ -727,6 +728,11 @@ require('lazy').setup({
     end,
   },
 
+  {
+    'thepogsupreme/mountain.nvim',
+    name = 'mountain',
+  },
+
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
@@ -743,7 +749,7 @@ require('lazy').setup({
         },
       }
 
-      vim.cmd 'colorscheme rose-pine'
+      vim.cmd 'colorscheme mountain'
     end,
   },
 
