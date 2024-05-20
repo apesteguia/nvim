@@ -870,7 +870,35 @@ require('lazy').setup({
   },
 })
 
+--#set statusline+=\ %{GetVimMode()}
+
 vim.cmd [[
+function! GetVimMode()
+    let mode = mode()
+    if mode == 'n'
+        return 'NORMAL'
+    elseif mode == 'i'
+        return 'INSERT'
+    elseif mode == 'v'
+        return 'VISUAL'
+    elseif mode == 'V'
+        return 'V-LINE'
+    elseif mode == "\<C-V>"
+        return 'V-BLOCK'
+    elseif mode == 'R'
+        return 'REPLACE'
+    elseif mode == 'c'
+        return 'COMMAND'
+    elseif mode == 's'
+        return 'SELECT'
+    elseif mode == "\<C-R>"
+        return 'HIT-ENTER'
+    elseif mode == 't'
+        return 'TERMINAL'
+    else
+        return mode
+    endif
+endfunction
 set statusline=
 set statusline+=\   
 set statusline+=\ 󰣠 
@@ -885,6 +913,7 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
+set statusline+=\ [%{strftime('%H:%M')}]
 set statusline+=\
 set statusline+=\   
 set statusline+=\   
