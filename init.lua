@@ -7,7 +7,7 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.opt.guicursor = ''
+--vim.opt.guicursor = ''
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
@@ -487,6 +487,14 @@ require('lazy').setup({
             })
           end
 
+          local codelens = vim.api.nvim_create_augroup('LSPCodeLens', { clear = true })
+          vim.api.nvim_create_autocmd({ 'BufEnter', 'InsertLeave', 'CursorHold' }, {
+            group = codelens,
+            callback = function()
+              vim.lsp.codelens.refresh()
+            end,
+          })
+
           -- The following autocommand is used to enable inlay hints in your
           -- code, if the language server you are using supports them
           --
@@ -517,9 +525,35 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {},
-        gopls = {},
+        gopls = {
+          settings = {
+            gopls = {
+              completeUnimported = true,
+              usePlaceholders = true,
+            },
+          },
+        },
         pyright = {},
-        ocamllsp = {},
+        ocamllsp = {
+          cmd = { 'ocamllsp' },
+          settings = {
+            codelens = { enable = true },
+            inlayHints = { enable = true },
+            duneDiagnositcs = { enable = true },
+            syntaxDocumentation = { enable = true },
+            extendedHover = { enable = true },
+          },
+
+          filetypes = {
+            'ocaml',
+            'ocaml.interface',
+            'ocaml.menhir',
+            'ocaml.cram',
+          },
+
+          -- TODO: Check if i still need the filtypes stuff i had before
+        },
+
         zls = {},
         elixirls = {},
         tsserver = {},
@@ -729,8 +763,21 @@ require('lazy').setup({
   },
 
   {
+    'tjdevries/colorbuddy.nvim',
+  },
+
+  {
     'thepogsupreme/mountain.nvim',
     name = 'mountain',
+  },
+
+  -- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+    lazy = false,
   },
 
   { -- You can easily change to a different colorscheme.
@@ -749,7 +796,7 @@ require('lazy').setup({
         },
       }
 
-      vim.cmd 'colorscheme mountain'
+      vim.cmd 'colorscheme gruvbuddy'
     end,
   },
 
@@ -836,7 +883,7 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  require 'kickstart.plugins.indent_line',
+  --require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
