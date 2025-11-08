@@ -802,7 +802,7 @@ require('lazy').setup({
   {
     'apesteguia/apesteguia.nvim',
     config = function()
-      vim.cmd.colorscheme 'tairiki'
+      vim.cmd.colorscheme 'tairiki-dimmed'
     end,
   },
 
